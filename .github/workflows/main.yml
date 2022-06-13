@@ -1,0 +1,16 @@
+name: helloGithubAction
+ 
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: print pika
+      run: echo pika pika!
+    - name: print dir
+      run: ls -al
+    - name: print python version!!
+      run: python -V
+    - name: go version
+      run: go version
